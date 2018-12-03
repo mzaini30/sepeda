@@ -24,7 +24,7 @@ img:not(.emoji) {
 
 /* messenger */
 
-.messenger {
+/*.messenger {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
@@ -32,7 +32,7 @@ img:not(.emoji) {
 .messenger img {
 	width: 50px;
 	height: auto;
-}
+}*/
 
 .emoji {
 	width: 21px;
