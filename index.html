@@ -11,10 +11,10 @@ layout: default
 		<div class="panel-body">
 			<p><img class="sampul" src='{{ post.image }}'></p>
 			{{ post.excerpt }}
-			<p><em>&mdash; {{ post.date | date_to_long_string }}</em></p>
+			<!--<p><em>&mdash; {{ post.date | date_to_long_string }}</em></p>-->
 		</div>
 		<div class='panel-footer'>
-		  <a class='btn btn-default' href='{{ post.url }}'>Lanjutkan membaca &rarr;</a>
+		  <a class='btn btn-success' href='https://api.whatsapp.com/send?phone=6281545143654&text=Berapa%20harganya?%0A%0A*Barang*%3A%20{{ post.title }}%0A*Link*%3A%20{{ site.url }}{{ post.url }}'>Cek harga &rarr;</a>		  
 		</div>
 	</div>
 {% endfor %}
