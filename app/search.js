@@ -6,7 +6,7 @@
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
-      var appendString = '';
+      var appendString = '<div class="panel panel-default">  <div class="panel-body">Kata kunci: ' + location.search.slice(7) + '</div></div>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
@@ -22,7 +22,7 @@
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<div class="panel panel-warning">  <div class="panel-body">Nggak ketemu</div></div>';
+      searchResults.innerHTML = '<div class="panel panel-warning">  <div class="panel-body">Barang tidak ditemukan</div></div>';
     }
   }
 
