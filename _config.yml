@@ -1,0 +1,19 @@
+title: "Sepeda Samarinda"
+
+permalink: /:title/
+
+paginate: 10
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  
+name: Sepeda Samarinda
+description: Pusatnya sepeda murah berkualitas di Samarinda
+url: https://sepeda.muhammadzaini.com
+
+author:
+  twitter: mzaini30
+  
+timezone: Asia/Makassar
