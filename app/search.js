@@ -1,3 +1,6 @@
+---
+---
+
 (function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
@@ -9,7 +12,11 @@
         var item = store[results[i].ref];
         appendString += '<div class="panel panel-default">';
         appendString += '<div class="panel-heading list-group-item"><a href="' + item.url + '">' + item.title + '</a> <a href="/kategori/' + item.category + '" class="badge">' + item.category + '</a></div>';
-        appendString += '<div class="panel-body">' + item.content.substring(0, 150) + '...</div>';
+        appendString += '<div class="panel-body">';
+        appendString += '<p><img class="sampul" src="' + item.image + '"></p>';
+        appendString += item.content.substring(0, 150);
+        appendString += '</div>';
+        appendString += '<div class="panel-footer"><a class="btn btn-success" href="https://api.whatsapp.com/send?phone=6281545143654&text=Berapa%20harganya?%0A%0A*Barang*%3A%20' + item.title + '%0A*Link*%3A%20{{ site.url }}' + item.url + '">Cek harga &rarr;</a></div>';
         appendString += '</div>';
       }
 
