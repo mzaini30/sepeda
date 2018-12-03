@@ -14,22 +14,26 @@ layout: kosongan
 					<div class="medium">
 						<p><img class="sampul" src='{{ page.image }}'></p>
 						{{ content }}
-						<p><em>&mdash; {{ page.date | date_to_long_string }}</em></p>
+				<!--		<p><em>&mdash; {{ page.date | date_to_long_string }}</em></p>-->
 					</div>
 
-				
+				<!--
 					<p>
 						<a href='https://api.whatsapp.com/send?text={{ page.title }}%20{{ site.url }}{{ page.url }}' class='btn btn-success'>Bagikan ke Whatsapp</a>
 					</p>
-				
+				-->
+				<!--
 					<div class='form-group'>
 						<label for='komentar-wa'>Komentar Whatsapp:</label>
 						<textarea id='komentar-wa' class='form-control wa-teks' rows='5' placeholder='Masukkan komentarmu di sini'></textarea>
 					</div>
 					<button class='btn btn-success wa-kirim'>Kirimkan Komentar</button>
-					
+					-->
 
 				</div>
+	<div class='panel-footer'>
+	<a class='btn btn-success' href='https://api.whatsapp.com/send?phone=6281545143654&text=Berapa%20harganya?%0A%0A*Barang*%3A%20{{ page.title }}%0A*Link*%3A%20{{ site.url }}{{ page.url }}'>Cek harga &rarr;</a>
+	</div>
 			</div>
 
 		</div>
