@@ -6,7 +6,7 @@
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
-      var appendString = '<div class="panel panel-default">  <div class="panel-body">Kata kunci: ' + location.search.slice(7) + '</div></div>';
+      var appendString = '<div class="panel panel-default">  <div class="panel-body">Kata kunci: ' + location.search.slice(7).replace(/\+/g, ' ') + '</div></div>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
