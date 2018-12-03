@@ -1,0 +1,15 @@
+{
+  "short_name": "Sepeda Samarinda",
+  "name": "Sepeda Samarinda",
+  "icons": [
+    {
+      "src": "https://sepeda.muhammadzaini.com/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#67BCFF",
+  "display": "standalone",
+  "start_url": "/?utm_source=homescreen"
+}
