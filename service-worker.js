@@ -1,15 +1,15 @@
 var CACHE_NAME = 'zen-cache';
 var urlsToCache = [
-    '/bin/bootstrap/css/bootstrap.min.css',
-    '/bin/bootstrap/js/bootstrap.min.js',
+    '/vendor/bootstrap/css/bootstrap.min.css',
+    '/vendor/bootstrap/js/bootstrap.min.js',
     // '/bin/pygment/default.css',
-    '/bin/jquery.min.js',
-    '/bin/lunr.min.js',
-    '/bin/ResizeSensor.min.js',
-    '/bin/theia-sticky-sidebar.min.js',
+    '/vendor/jquery/jquery.min.js',
+    '/vendor/lunr/lunr.min.js',
+    '/vendor/theia/ResizeSensor.min.js',
+    '/vendor/theia/theia-sticky-sidebar.min.js',
     '/gambar/404.png',
     '/favicon.ico',
-    '/messenger.png',
+    // '/messenger.png',
     '//twemoji.maxcdn.com/2/twemoji.min.js?11.2'
     // '/gambar/play store.png'
 ];
