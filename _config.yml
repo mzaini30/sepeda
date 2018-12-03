@@ -1,6 +1,6 @@
 title: "Sepeda Samarinda"
 
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 
 paginate: 10
 
