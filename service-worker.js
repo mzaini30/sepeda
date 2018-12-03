@@ -1,4 +1,4 @@
-var CACHE_NAME = 'zen-cache';
+var CACHE_NAME = 'sepeda-cache';
 var urlsToCache = [
     '/vendor/bootstrap/css/bootstrap.min.css',
     '/vendor/bootstrap/js/bootstrap.min.js',
