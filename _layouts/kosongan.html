@@ -50,7 +50,7 @@
 	<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
 	<script>
 		$('.wa-kirim').click(function(){
-			nomor_whatsapp = '6281545143654'
+			nomor_whatsapp = '{{ site.whatsapp }}'
 			template = "*Judul*%3A%20{{ page.title | replace: ' ', '%20' | replace: ':', '%3A' }}%0A*Link*%3A%20{{ site.url | replace: ':', '%3A' }}{{ page.url | replace: ':', '%3A' }}%0A%0A*Komentar*%3A%0A%0A"
 			isi = $('.wa-teks').val().replace(/ /g, '%20').replace(/:/g, '%3A').replace(/\n/g, '%0A')
 			hasil = 'https://api.whatsapp.com/send?phone=' + nomor_whatsapp + '&text=' + template + isi

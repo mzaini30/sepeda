@@ -16,7 +16,7 @@
         appendString += '<p><img class="sampul" src="' + item.image + '"></p>';
         appendString += item.content.substring(0, 150);
         appendString += '</div>';
-        appendString += '<div class="panel-footer"><a class="btn btn-success" href="https://api.whatsapp.com/send?phone=6281545143654&text=Berapa%20harganya?%0A%0A*Barang*%3A%20' + item.title + '%0A*Link*%3A%20{{ site.url }}' + item.url + '">Cek harga &rarr;</a></div>';
+        appendString += '<div class="panel-footer"><a class="btn btn-success" href="https://api.whatsapp.com/send?phone={{ site.whatsapp }}&text=Berapa%20harganya?%0A%0A*Barang*%3A%20' + item.title + '%0A*Link*%3A%20{{ site.url }}' + item.url + '">Cek harga &rarr;</a></div>';
         appendString += '</div>';
       }
 
